@@ -122,4 +122,48 @@ a {
     width: 40%;
     border-radius: 50%;
     margin-top: 20px;
+
+}
+
+
+@media (max-width: 700px) {
+    #container, #container2 {
+        width: 95%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    #imagem, #imagem2 {
+        width: 60%;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    #conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #texto, #texto2 {
+        width: 95%;
+        padding-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .flor {
+        margin: 20px auto;
+        display: block;
+    }
+
+    #botao {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    img {
+        border-radius: 24%;
+        width: 100%;
+    }
 }
