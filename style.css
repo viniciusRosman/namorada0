@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg,rgb(87, 10, 143), rgb(125, 3, 125));
+}
+
+#container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(rgba(23, 10, 33, 0.752), rgba(110, 1, 107, 0.253));
+    box-shadow: 7px 9px 20px rgb(80, 3, 121);
+    border-radius: 30px;
+}
+
+#imagem {
+    margin: 0 auto;
+    padding: 2%;
+    width: 20%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+img {
+    border-radius: 24%;
+    width: 100%;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#texto {
+    width: 50%;
+    padding-left: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+span {
+    color: rgb(173, 132, 139);
+}
+
+.flor {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-right: 40px;
+  animation: girar 5s linear infinite;
+}
+
+
+
+.petala {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background: pink;
+  border-radius: 40px 40px 0 0;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.petala1 { transform: rotate(0deg) translateY(-40px); }
+.petala2 { transform: rotate(72deg) translateY(-40px); }
+.petala3 { transform: rotate(144deg) translateY(-40px); }
+.petala4 { transform: rotate(216deg) translateY(-40px); }
+.petala5 { transform: rotate(288deg) translateY(-40px); }
+
+@keyframes girar {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+#botao {
+    background-color: rgb(125, 3, 125);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(87, 10, 143);
+    display: flex;
+    align-self: center;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.449);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* CSS da pagina contagem */
+
+#container2 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(rgba(23, 10, 33, 0.752), rgba(110, 1, 107, 0.253));
+    box-shadow: 7px 9px 20px rgb(80, 3, 121);
+    border-radius: 30px;
+}
+
+#texto2 {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+}
+
+#contagem {
+    padding-bottom: 4px;
+}
+
+#imagem2 {
+    margin: 0 auto;
+    padding: 2%;
+    width: 40%;
+    border-radius: 50%;
+    margin-top: 20px;
+}

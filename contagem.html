@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amoooooooooooo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container2">
+
+        <div id="imagem2">
+            <img src="imagem/Imagem do WhatsApp de 2025-09-05 à(s) 14.24.29_bb0c59ec.jpg" alt="imagem do meu amooooooooooooor">
+        </div>
+
+        <div id="conteudo2">
+            
+         <div id="texto2">
+            <h1>Eu te amo há</h1>
+
+            <h2 id="tempo">Carregando...</h2>
+
+
+            <div id="contagem">
+                 <script>
+                    // Defina aqui a data de início do relacionamento 💕
+                    // Formato: "YYYY-MM-DDTHH:MM:SS"
+                    const dataInicio = new Date("2025-04-08T10:00:00"); 
+
+                    const elemento = document.getElementById("tempo");
+
+                    function atualizar() {
+                    const agora = new Date();
+                    
+                    // diferença em segundos
+                    let diffSegundos = Math.floor((agora - dataInicio) / 1000);
+
+                    const meses = Math.floor(diffSegundos / (30 * 24 * 60 * 60));
+                    diffSegundos %= (30 * 24 * 60 * 60);
+
+                    const dias = Math.floor(diffSegundos / (24 * 60 * 60));
+                    diffSegundos %= (24 * 60 * 60);
+
+                    const horas = Math.floor(diffSegundos / (60 * 60));
+                    diffSegundos %= (60 * 60);
+
+                    const minutos = Math.floor(diffSegundos / 60);
+                    const seg = diffSegundos % 60;
+
+                    elemento.textContent = 
+                        `${meses} meses, ${dias} dias, ${horas}h ${minutos}m ${seg}s`;
+                    }
+
+                    // chama a função a cada 1 segundo
+                    setInterval(atualizar, 1000);
+                    atualizar(); // mostra logo ao abrir
+
+                </script>
+                
+            </div>
+
+         </div>
+
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
